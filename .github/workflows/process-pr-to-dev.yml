@@ -125,7 +125,6 @@ jobs:
       run: |
         echo "Current branch: ${{ github.ref }}"
         echo "Is feature branch: ${{ startsWith(github.ref, 'refs/heads/feature/') }}"
-		
   auto-merge:
     if: github.event_name == 'pull_request_review' && github.event.review.state == 'approved'
     name: Auto Merge to Dev
