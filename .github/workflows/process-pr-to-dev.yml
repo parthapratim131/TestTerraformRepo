@@ -203,9 +203,7 @@ jobs:
         AUTO_PR_TOKEN: ${{ secrets.AUTO_PR_TOKEN }}		  												   
       with:
         script: |
-																	   
-		  
-          try {
+         try {
             console.log('🚀 Starting auto-merge to dev...');
             
             // Use the built-in github object directly
