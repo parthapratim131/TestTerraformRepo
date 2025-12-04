@@ -1,7 +1,7 @@
 name: Chained Workflow
 on:
   workflow_run:
-    workflows: ["Main Workflow"]
+    workflows: ["Process PR to Dev"]
     types:
       - completed
 
