@@ -1,0 +1,13 @@
+name: Chained Workflow
+on:
+  workflow_run:
+    workflows: ["Main Workflow"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: echo "Deploying!"
